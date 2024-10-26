@@ -1,0 +1,266 @@
+:root {
+  --background1: #eeffeae0;
+  --bglightblack: #3b3b3b;
+  --lighrbrown: #bba14f;
+  --lightgreen: #afd275;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.wrapper .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #afd275;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.wrapper .row {
+  display: flex;
+}
+
+.wrapper .row-1 {
+  justify-content: flex-start;
+}
+
+.wrapper .row-2 {
+  justify-content: flex-end;
+}
+
+.wrapper .row div {
+  border-radius: 8px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+  background-color: #e6ffe0;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .row div::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+  background-color: #e4ffde;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.row-1 div::before {
+  right: -7px;
+}
+
+.row-2 div::before {
+  left: -7px;
+}
+
+.row div .icon,
+.center-line .scroll-icon {
+  position: absolute;
+  background: #e6ffe0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--lightgreen);
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+
+.row-1 div .icon {
+  top: 15px;
+  right: -60px;
+}
+
+.row-2 div .icon {
+  top: 15px;
+  left: -60px;
+}
+
+.row div .details,
+.row div .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details {
+  margin-bottom: 0px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff5454;
+  font-family: "Mooli", sans-serif;
+  letter-spacing: 1px;
+}
+
+.time {
+  color: #6aac00;
+  font-weight: bolder;
+  font-family: "Mooli", sans-serif;
+  letter-spacing: 1px;
+  margin: 5px 5px;
+  font-size: 18px;
+}
+
+.timeline-sec {
+  margin: 0px 0px 0px 0px;
+  font-size: 14px;
+  letter-spacing: 0.9px;
+  font-family: "Mooli", sans-serif;
+}
+.descriptiondet {
+  margin: 10px 0px 17px;
+}
+.timelinelink-internal {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-weight: 600;
+}
+.timelinelink-internal:hover {
+  color: #0058aa;
+}
+.bottom {
+  margin-bottom: 0px;
+}
+.row div .bottom a {
+  text-decoration: none;
+  background: var(--lightgreen);
+  color: var(--bglightblack);
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-family: "Mooli", sans-serif;
+  letter-spacing: 1px;
+}
+
+.row div .bottom a:hover {
+  transform: scale(0.97);
+}
+
+@media (max-width: 790px) {
+  .wrapper .center-line {
+    left: 40px;
+  }
+
+  .wrapper .row {
+    margin: 30px 0 3px 60px;
+  }
+
+  .wrapper .row div {
+    width: 100%;
+  }
+
+  .row-1 div::before {
+    left: -7px;
+  }
+
+  .row-1 div .icon {
+    left: -60px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* .wrapper .center-line,
+    .row div::before,
+    .row div .icon{
+      display: none;
+    }
+    .wrapper .row{
+      margin: 10px 0;
+    } */
+  .wrapper .center-line {
+    left: 20px;
+  }
+
+  .wrapper .row {
+    margin: 20px 0 2px 35px;
+  }
+
+  .wrapper .row div {
+    width: 100%;
+  }
+  .wrapper .row div::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    top: 20px;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+
+  .row-1 div::before {
+    left: -7px;
+  }
+
+  .row-1 div .icon {
+    left: -45px;
+  }
+
+  .row-2 div .icon {
+    left: -45px;
+  }
+
+  .wrapper .center-line {
+    position: absolute;
+    height: 100%;
+    width: 2.5px;
+    background: #afd275;
+    top: 20px;
+  }
+
+  .row div .icon,
+  .center-line .scroll-icon {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 10px;
+  }
+
+  .center-line .scroll-icon {
+    font-size: 10px;
+  }
+
+  .row div .details .title {
+    font-size: 13px;
+  }
+
+  .time {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+
+  .descriptiondet {
+    font-size: 10px;
+  }
+
+  .row div .bottom a {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

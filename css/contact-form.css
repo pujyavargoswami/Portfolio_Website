@@ -1,0 +1,361 @@
+:root {
+  --background1: #eeffeae0;
+  --bglightblack: #3b3b3b;
+  --lighrbrown: #bba14f;
+  --lightgreen: #afd275;
+}
+
+div .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  /* background-color: rgba(87, 93, 61, 0.8); */
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.4);
+  font-family: "Mooli", sans-serif;
+  background: linear-gradient(
+    270deg,
+    #faf5c2,
+    #dffbff,
+    #ffe5e9,
+    #fff1da,
+    #e4ffe6,
+    #f4ddf8
+  );
+  background-size: 1100% 1100%;
+  animation: colorShift 15s ease infinite;
+}
+
+/* Background animation */
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form_container {
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.contact-form-header {
+  text-align: center;
+  color: #222222;
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Genos", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+.input-field {
+  position: relative;
+  margin-bottom: 2px;
+  text-align: left;
+}
+label {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  color: #222222;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  /* background: #d4e28fc9; */
+  background-color: #f6e199;
+  color: #222222;
+  letter-spacing: 1px;
+}
+input:focus,
+textarea:focus {
+  border-radius: 8px;
+  /* border-color: var(--lightgreen); */
+  background-color: #f6eed5;
+}
+input:focus ~ label,
+textarea:focus ~ label,
+input:not(:placeholder-shown) ~ label,
+textarea:not(:placeholder-shown) ~ label {
+  top: -23px;
+  left: 10px;
+  font-size: 15px;
+  color: #222222;
+  border-radius: 8px;
+  font-weight: 600;
+}
+textarea {
+  resize: vertical; /* Prevent message field from stretching */
+}
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  display: block;
+  margin-top: -8px;
+  /* margin-left: 10px; */
+  /* background-color: #ffffff; */
+  padding: 0px 5px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Mooli", sans-serif;
+  letter-spacing: 1px;
+}
+.formsend {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--lighrbrown);
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: "Genos", sans-serif;
+  text-transform: uppercase;
+}
+.formsend:hover {
+  background-color: var(--lightgreen);
+  text-decoration: none;
+  border: none;
+}
+
+/* Center and adjust margins/padding */
+input,
+textarea {
+  margin-bottom: 18px;
+  padding: 14px;
+}
+.input-field {
+  margin-bottom: 18px;
+}
+
+/* ------------------------- */
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 4px #000000 double;
+  border-left-style: solid;
+  border-radius: 50%;
+  animation: spinner-aib1d7 0.9s infinite linear;
+  vertical-align: middle;
+}
+
+@keyframes spinner-aib1d7 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for submit button */
+#submitButton {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+.content .topic {
+  font-size: 20px;
+  font-weight: 400;
+  color: #dfdfdf;
+  /* font-family: 'Genos', sans-serif; */
+  font-family: "Rationale", sans-serif;
+  letter-spacing: 1px;
+}
+
+.content form {
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.content .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 18px 0;
+  position: relative;
+}
+
+.content .input-box input {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  color: #f1f1f1;
+  padding: 0 16px;
+  background: #d4e28fc9;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.content .input-box input:focus,
+.content .input-box input:valid {
+  border-color: var(--lightgreen);
+  background-color: #575d3d;
+}
+
+.content .input-box label {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  font-weight: 500;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  font-family: "Rationale", sans-serif;
+  letter-spacing: 2px;
+}
+
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label {
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: var(--lightgreen);
+  background: #575d3d;
+  padding: 1px 6px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.content .message-box {
+  min-height: 100px;
+  position: relative;
+}
+
+.content .message-box textarea {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  resize: none;
+  color: #f1f1f1;
+  background: #d4e28fc9;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px 16px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.content .message-box textarea:focus,
+.content .message-box textarea:valid {
+  border-color: var(--lightgreen);
+  background-color: #575d3d;
+}
+
+.content .message-box label {
+  position: absolute;
+  font-size: 15px;
+  color: #636c72;
+  left: 18px;
+  top: 8px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-family: "Rationale", sans-serif;
+  letter-spacing: 2px;
+}
+
+.content .message-box textarea:focus ~ label,
+.content .message-box textarea:valid ~ label {
+  left: 12px;
+  top: -12px;
+  color: var(--lightgreen);
+  font-size: 15px;
+  background: #575d3d;
+  padding: 1px 6px;
+  border-radius: 8px;
+  display: 14px;
+}
+
+/* .content .input-box input[type="submit"] {
+  color: #fff;
+  background: var(--lighrbrown);
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: "Rationale", sans-serif;
+}
+
+.content .input-box input[type="submit"]:hover {
+  background-color: var(--lightgreen);
+} */
+
+.content .input-box button {
+  color: #fff;
+  background: var(--lighrbrown);
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+  border: none;
+  border-radius: 8px;
+  font-family: "Rationale", sans-serif;
+  text-decoration: none;
+}
+
+.content .input-box button:hover {
+  background-color: var(--lightgreen);
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .content form {
+    width: 100%;
+  }
+}

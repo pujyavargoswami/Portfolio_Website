@@ -1,0 +1,87 @@
+/* Counter Up div Start */
+/* 
+
+  @media (max-width: 993px) {
+    .counterwraper{
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      padding: 15px 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    .counterwraper{
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      padding: 15px 15px;
+    }
+  }
+  @media (max-width: 540px) {
+    .counterwraper{
+      width: 90px;
+      height: auto;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .namecounter{
+      font-size: 15px;
+      padding: 1px 10px;
+    }
+    .counter{
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+  @media (max-width: 280px) {
+    .counterwraper{
+      width: 70px;
+      height: auto;
+      padding: 5px 8px;
+    }
+    .countericon{
+      font-size: 20px;
+    }
+  } */
+
+/* Counter Up div End */
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  background-color: #222222;
+  height: auto;
+  overflow: auto;
+  flex-direction: row;
+  padding: 8px 4px;
+}
+
+.FlexContainer .counterwraper {
+  width: 150px;
+  height: auto;
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 10px;
+}
+
+.countericon {
+  text-align: center;
+  font-size: 22px;
+  color: #f1ff72;
+  padding: 2px 5px;
+}
+.counterimg{
+  width: 35px;
+  height: 35px;
+}
+
+.counter {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ffed4f;
+  padding: 2px 5px;
+}
