@@ -6,7 +6,7 @@ Welcome to **Pujyavar Datt’s Portfolio**! This website is designed to showcase
 
 ---
 
-## 🌐 [Live Demo](https://pujyavardatt.netlify.app/) | [GitHub Repository](https://pujyavargoswami.github.io/Portfolio_Website/)
+## 🌐 [Live Demo](https://pujyavardatt.netlify.app/) | [GitHub Repository](https://github.com/pujyavargoswami/Portfolio_Website)
 
 ## 📑 Table of Contents
 1. [Home](#-home)
