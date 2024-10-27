@@ -1,4 +1,4 @@
-# Pujyavar Datt Portfolio 🎨✨
+# Pujyavar Datt | Portfolio 🎨✨
 
 Welcome to **Pujyavar Datt’s Portfolio**! This website is designed to showcase my expertise in software development, front-end design, and project management through a clean, interactive, and SEO-friendly interface. Built using **HTML5**, **CSS3**, **JavaScript**, and enhanced by powerful libraries like **Bootstrap** and **jQuery**, this portfolio provides a professional and engaging experience on all devices.
 
